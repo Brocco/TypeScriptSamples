@@ -1,0 +1,8 @@
+<h2>i'm a list</h2>
+<form ng-submit="list.addItem(list.newItem)">
+  <input type="text" ng-model="list.newItem" placeholder="Add New Item" />
+  <button class="hidden-button" type="submit">Add</button>
+</form>
+<div ng-repeat="item in list.items track by $index">
+  <item item="item"></item>
+</div>

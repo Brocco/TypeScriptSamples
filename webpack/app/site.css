@@ -1,0 +1,19 @@
+list {}
+
+item {}
+
+.hidden-button {
+  display: none;
+}
+
+.completed-indicator.completed {
+  text-decoration: line-through;
+}
+
+/*.completed-indicator:not(.completed) {
+  content: '-'
+}*/
+
+item .completed-indicator, item .name {
+  display: inline-block;
+}
